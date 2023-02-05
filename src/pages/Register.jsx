@@ -39,10 +39,8 @@ export default function Register() {
                 <motion.div variants={buttonVariant(1)} className="bg-white py-6 px-4 overflow-hidden max-w-[500px]">
                     <h1 className="text-center font-bold text-2xl text-[#3BBDB6]">Registration Form</h1>
                     <div className="mt-16">
-                        <label className="font-medium text-[#3BBDB6] text-xl">storage provider owner address</label>
+                        <label className="font-medium text-[#3BBDB6] text-xl">Storage Provider Id</label>
                         <input onChange={(e) => {setOwnerAddress(e.target.value)}} className="w-[100%] mt-2 mb-8 rounded-lg bg-[#54cbc5] p-2 text-white placeholder-white" placeholder="Eg: 51539845896xe676891208"/>
-                        <label className="font-medium text-[#3BBDB6] text-xl">Total Sectors</label>
-                        <input onChange={(e) => {setTotalSector(e.target.value)}} className="w-[100%] mt-2 mb-10 rounded-lg bg-[#54cbc5] p-2 text-white placeholder-white" placeholder="Eg: 10"/>
                         {allfields ? <button onClick={handleclick} className="bg-[#3BBDB6] py-2 text-white w-[100%]">Register</button> : <button className="bg-[#3BBDB6] opacity-60 py-2 text-white w-[100%] disabled cursor-not-allowed">Register</button>}
                     </div>
                 </motion.div>
