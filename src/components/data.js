@@ -2,7 +2,7 @@ export const packages = [
     {
         id:"1",
         url:"/protect.jpg",
-        heading:"Protects you against any loss in the crypto market",
+        heading:"Provider Security to Storage Provider in case of falure",
         description:"We can are an innovative and effective insurance solution. We marry the cryptocurrency market and the insurance market to ensure the profit security for all cryptocurrency owners.",
     },
     {
