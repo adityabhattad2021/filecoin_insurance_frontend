@@ -12,7 +12,7 @@ export default function Benefits() {
         viewport={{ once: false, amount: 0.25 }}
         className="py-[30px] relative z-10" id="benefits">
             <div className="max-w-[800px] mx-auto pt-[60px] pb-[30px]">
-                <h1 className="text-center py-4 text-[#3BBDB6] text-2xl sm:text-4xl font-bold mb-4 overflow-hidden">Benefits of Getting a crypto insurance </h1>
+                <h1 className="text-center py-4 text-[#3BBDB6] text-2xl sm:text-4xl font-bold mb-4 overflow-hidden">Benefits of Getting a SP Insurance </h1>
             </div>   
             <div className="flex justify-center items-center flex-wrap">
                 {packages.map((item,index) => {

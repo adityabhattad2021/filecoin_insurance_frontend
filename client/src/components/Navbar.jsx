@@ -16,7 +16,7 @@ export default function Navber({hide,logout}) {
         <motion.div variants={navVariants}
         initial="hidden"
         whileInView="show" className="flex z-20 bg-[#3BBDB6] fixed w-screen items-center justify-between px-8 py-4 shadow-2xl">
-            <a href="/"><img className="h-8 object-contain cursor-pointer md:h-12" src="/logo.png" alt="cryptosurance-logo"/></a>
+            <a href="/"><h1 className="h-8 object-contain cursor-pointer md:h-12 text-white text-2xl font-bold" >Filecoin Insurance</h1></a>
             {hide !== "true" && <div className="flex gap-6 items-center">
                 <a className="hidden md:block" href="#flow"><li className="text-white font-bold text-xl">Flow</li></a>
                 <a className="hidden md:block" href="#benefits"><li className="text-white font-bold text-xl">Benefits</li></a>

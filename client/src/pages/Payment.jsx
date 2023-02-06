@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { buttonVariant } from "../components/motion";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Navber from "../components/Navbar";
 
@@ -8,7 +10,15 @@ export default function Payment() {
     const Navigate = useNavigate();
 
     const handleclick = () => {
-        Navigate("/user")
+        const resolveAfter3Sec = new Promise(resolve => setTimeout(resolve, 2000));
+        toast.promise(
+            resolveAfter3Sec,{
+                pending: 'Processing Payment',
+                success: 'Payment Successful',
+                error: 'Payment rejected'
+            }
+        )
+        const timer = setTimeout(() => Navigate("/user"), 5000);
     }
     
     return (
@@ -23,6 +33,7 @@ export default function Payment() {
                     <p className="text-[#ff0000] text-sm mt-2">This is just to simulate the payment process no money would be deducted.</p>
                 </motion.div>
             </div>
+            <ToastContainer className="overflow-hidden"/>
         </motion.div>
     )
 }

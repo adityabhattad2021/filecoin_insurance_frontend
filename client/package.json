@@ -9,12 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rainbow-me/rainbowkit": "^0.8.1",
     "axios": "^1.2.6",
     "ethers": "^5.7.2",
+    "firebase": "^9.17.1",
     "framer-motion": "^8.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.0"
+    "react-router-dom": "^6.8.0",
+    "react-toastify": "^9.1.1",
+    "toastify-js": "^1.12.0",
+    "wagmi": "^0.9.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

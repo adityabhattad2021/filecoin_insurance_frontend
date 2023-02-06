@@ -15,3 +15,7 @@ li,a {
   list-style-type: none;
   text-decoration: none;
 }
+
+.Toastify__toast-icon{
+  overflow: hidden;
+}
